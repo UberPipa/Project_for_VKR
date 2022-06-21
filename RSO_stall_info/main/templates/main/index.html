@@ -15,54 +15,182 @@
 <!--    <link rel="stylesheet" href="{% static 'main/css/bootstrap.rtl.min.css'%}">-->
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #134361;">
-  <div class="container-fluid col-sm-10">
-    <a class="navbar-brand" href="#">Главная кнопка</a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Что то должно выскочить</a>
-          <ul class="dropdown-menu" aria-labelledby="dropdown01">
-            <li><a class="dropdown-item" href="#">Ссылка</a></li>
-            <li><a class="dropdown-item" href="#">Ссылка</a></li>
-            <li><a class="dropdown-item" href="#">Ссылка</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">кнопушка</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">кнопушка</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">кнопушка</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">кнопушка</a>
-        </li>
-      </ul>
-      <button type="button" class="btn btn-sm btn-outline-light">Например авторизация</button>
-    </div>
-  </div>
-</nav>
-<nav class="navbar navbar-expand-lg bg-light shadow-lg">
-  <div class="container-fluid col-sm-10" style="height: 25px;">
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link" href="#">Ссылка</a>
-        <a class="nav-link" href="#">Ссылка</a>
-        <a class="nav-link" href="#">Ссылка</a>
-        <a class="nav-link" href="#">Ссылка</a>
-        <a class="nav-link" href="#">Ссылка</a>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #134361;">
+    <div class="container-fluid col-sm-10">
+      <a class="navbar-brand" href="#">Главная кнопка</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Что то должно выскочить</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+              <li><a class="dropdown-item" href="#">Ссылка</a></li>
+              <li><a class="dropdown-item" href="#">Ссылка</a></li>
+              <li><a class="dropdown-item" href="#">Ссылка</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">кнопушка</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">кнопушка</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">кнопушка</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">кнопушка</a>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-sm btn-outline-light">Например авторизация</button>
       </div>
     </div>
-  </div>
-</nav>
-<div class="container-fluid col-sm-9" style="padding: 20px;">
-  <img src="{% static 'main/img/logo.png'%}" alt="logo" style="height: 100px; margin-right: 40px;">
-  <img src="{% static 'main/img/Title.png'%}" class="sticky-bottom" alt="logo" style="height: 70px; margin-right: 40px;">
-</div>
-<script src="{% static 'main/js/bootstrap.bundle.js'%}"></script>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg shadow" style="background-color: #EFEFEF;">
+    <div class="container-fluid col-sm-10" style="height: 25px;">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#">Ссылка</a>
+          <a class="nav-link" href="#">Ссылка</a>
+          <a class="nav-link" href="#">Ссылка</a>
+          <a class="nav-link" href="#">Ссылка</a>
+          <a class="nav-link" href="#">Ссылка</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="d-flex align-items-center p-2 my-3 bg-purple rounded">
+      <img class="me-3 img-fluid" src="{% static 'main/img/Horizon_text_and_logo.png'%}" alt="Horizon_text_and_logo">
+    </div>
+  </main>
+
+  <main class="container" >
+    <div class="my-2 p-3 rounded shadow " style="background-color: #F6F3F3;">
+      <h6 class="border-bottom pb-2 mb-0">Информация о чём то</h6>
+      <div class="d-flex text-muted pt-3">
+        <p class="pb-3 mb-0 small lh-sm border-bottom">
+          <strong class="d-block text-gray-dark">Важная информация</strong>
+          Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+        </p>
+      </div>
+      <div class="d-flex text-muted pt-3">
+        <p class="pb-3 mb-0 small lh-sm border-bottom">
+          <strong class="d-block text-gray-dark">Важная информация</strong>
+          Таким образом новая модель организационной деятельности способствует подготовки и реализации систем массового участия.
+        </p>
+      </div>
+      <div class="d-flex text-muted pt-3">
+        <p class="pb-3 mb-0 small lh-sm border-bottom">
+          <strong class="d-block text-gray-dark">Важная информация</strong>
+          Равным образом рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
+        </p>
+      </div>
+      <div class="d-flex text-muted pt-3">
+        <p class="pb-3 mb-0 small lh-sm border-bottom">
+          <strong class="d-block text-gray-dark">Важная информация</strong>
+          Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности позволяет оценить значение новых предложений.
+  Товарищи! консультация с широким активом позволяет выполнять важные задания по разработке систем массового участия.
+        </p>
+      </div>
+      <div class="d-flex text-muted pt-3">
+        <p class="pb-3 mb-0 small lh-sm border-bottom">
+          <strong class="d-block text-gray-dark">Важная информация</strong>
+          Товарищи! сложившаяся структура организации представляет собой интересный эксперимент проверки направлений прогрессивного развития.
+  Таким образом новая модель организационной деятельности способствует подготовки и реализации систем массового участия.
+        </p>
+      </div>
+      <div class="d-flex text-muted pt-3">
+        <p class="pb-3 mb-0 small lh-sm border-bottom">
+          <strong class="d-block text-gray-dark">Важная информация</strong>
+          Товарищи! сложившаяся структура организации представляет собой интересный эксперимент проверки направлений прогрессивного развития.
+  Таким образом новая модель организационной деятельности способствует подготовки и реализации систем массового участия.
+        </p>
+      </div>
+      <div class="d-flex text-muted pt-3">
+        <p class="pb-3 mb-0 small lh-sm border-bottom">
+          <strong class="d-block text-gray-dark">Важная информация</strong>
+          Товарищи! сложившаяся структура организации представляет собой интересный эксперимент проверки направлений прогрессивного развития.
+  Таким образом новая модель организационной деятельности способствует подготовки и реализации систем массового участия.
+        </p>
+      </div>
+      <div class="d-flex text-muted pt-3">
+        <p class="pb-3 mb-0 small lh-sm border-bottom">
+          <strong class="d-block text-gray-dark">Важная информация</strong>
+          Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития.
+  С другой стороны укрепление и развитие структуры обеспечивает участие в формировании систем массового участия.
+        </p>
+      </div>
+      <div class="d-flex text-muted pt-3">
+        <p class="pb-3 mb-0 small lh-sm border-bottom">
+          <strong class="d-block text-gray-dark">Важная информация</strong>
+          С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач.
+        </p>
+      </div>
+      <small class="d-block text-end mt-3">
+        <a href="#">Ссылка на всякий случай</a>
+      </small>
+    </div>
+  </main>
+
+<main class="container" >
+  <div class="my-3 p-3 rounded shadow " style="background-color: #F6F3F3;">
+    <h6 class="border-bottom pb-2 mb-0">Таблица о чём то</h6>
+    <div class="d-flex text-muted pt-3">
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Имя</th>
+            <th scope="col">Фамилия</th>
+            <th scope="col">Обращение</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Вася</td>
+            <td>Василевский</td>
+            <td>Пример</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Вася</td>
+            <td>Василевский</td>
+            <td>Пример</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Вася</td>
+            <td>Василевский</td>
+            <td>Пример</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Вася</td>
+            <td>Василевский</td>
+            <td>Пример</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Вася</td>
+            <td>Василевский</td>
+            <td>Пример</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Вася</td>
+            <td>Василевский</td>
+            <td>Пример</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</main>
+
+  <script src="{% static 'main/js/bootstrap.bundle.js'%}"></script>
 </body>
 </html>
 
