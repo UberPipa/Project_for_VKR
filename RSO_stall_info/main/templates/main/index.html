@@ -1,72 +1,9 @@
-{% load static %}
-<!doctype html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Главная страница</title>
-<!--    <link rel="stylesheet" href="{% static 'main/css/bootstrap-reboot.css'%}">-->
-    <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css'%}">
-    <link rel="stylesheet" href="{% static 'main/css/style.css'%}">
-<!--    <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css'%}">-->
-<!--    <link rel="stylesheet" href="{% static 'main/css/bootstrap.rtl.css'%}">-->
-<!--    <link rel="stylesheet" href="{% static 'main/css/bootstrap.rtl.min.css'%}">-->
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #134361;">
-    <div class="container-fluid col-sm-10">
-      <a class="navbar-brand" href="#">Главная кнопка</a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Что то должно выскочить</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-              <li><a class="dropdown-item" href="#">Ссылка</a></li>
-              <li><a class="dropdown-item" href="#">Ссылка</a></li>
-              <li><a class="dropdown-item" href="#">Ссылка</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">кнопушка</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">кнопушка</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">кнопушка</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">о нас</a>
-          </li>
-        </ul>
-        <button type="button" class="btn btn-sm btn-outline-light">Например авторизация</button>
-      </div>
-    </div>
-  </nav>
+{% extends 'main/main_template.html' %}
 
-  <nav class="navbar navbar-expand-lg shadow" style="background-color: #EFEFEF;">
-    <div class="container-fluid col-sm-10" style="height: 25px;">
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link" href="#">Ссылка</a>
-          <a class="nav-link" href="#">Ссылка</a>
-          <a class="nav-link" href="#">Ссылка</a>
-          <a class="nav-link" href="#">Ссылка</a>
-          <a class="nav-link" href="#">Ссылка</a>
-        </div>
-      </div>
-    </div>
-  </nav>
+{% block title %} Главная {% endblock %}
 
-  <main class="container">
-    <div class="d-flex align-items-center p-2 my-3 bg-purple rounded">
-      <img class="me-3 img-fluid" src="{% static 'main/img/Horizon_text_and_logo.png'%}" alt="Horizon_text_and_logo">
-    </div>
-  </main>
-
-  <main class="container" >
+{% block content %}
+<main class="container" >
     <div class="my-2 p-3 rounded shadow " style="background-color: #F6F3F3;">
       <h6 class="border-bottom pb-2 mb-0">Информация о чём то</h6>
       <div class="d-flex text-muted pt-3">
@@ -133,25 +70,6 @@
       </small>
     </div>
   </main>
+{% endblock %}
 
-  <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark" style="background-color: #134361;">
-    <div class="container-fluid col-sm-10">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Ссылка</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Ссылка</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Ссылка</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <script src="{% static 'main/js/bootstrap.bundle.js'%}"></script>
-</body>
-</html>
 
