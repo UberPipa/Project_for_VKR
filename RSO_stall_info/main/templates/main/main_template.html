@@ -8,6 +8,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %}</title>
+	<link rel="icon" href="{% static 'main/img/logo.png'%}">
 <!--    <link rel="stylesheet" href="{% static 'main/css/bootstrap-reboot.css'%}">-->
     <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css'%}">
     <link rel="stylesheet" href="{% static 'main/css/style.css'%}">
@@ -72,7 +73,7 @@
 
   <main class="container" >
     <div class="my-2 p-3 rounded shadow " style="background-color: #F6F3F3;">
-{% block content %}{% endblock %}
+      {% block content %}{% endblock %}
     </div>
   </main>
 
