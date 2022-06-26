@@ -17,6 +17,8 @@ class Docs(models.Model):
     class Meta:
         db_table = 'docs'
         unique_together = (('id', 'doc_type'),)
+        verbose_name = 'Документ'
+        verbose_name_plural = 'Документы'
 
 
 class TypeDocs(models.Model):
@@ -25,3 +27,5 @@ class TypeDocs(models.Model):
 
     class Meta:
         db_table = 'type_docs'
+        verbose_name = 'Тип документа'
+        verbose_name_plural = 'Тип документов'

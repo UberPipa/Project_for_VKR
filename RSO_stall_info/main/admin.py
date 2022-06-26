@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Docs, TypeDocs
 
-# Register your models here.
+
+admin.site.register(Docs)
+admin.site.register(TypeDocs)

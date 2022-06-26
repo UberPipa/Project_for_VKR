@@ -1,8 +1,9 @@
 from django.shortcuts import render
-
+from .models import Docs, TypeDocs
 
 def index(request):
-    return render(request, 'main/index.html')
+    docs = Docs.objects.all()
+    return render(request, 'main/index.html', {'docs' : docs})
 
 
 def about(request):
