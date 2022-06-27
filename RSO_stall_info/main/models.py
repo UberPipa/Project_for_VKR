@@ -20,6 +20,8 @@ class Docs(models.Model):
         verbose_name = 'Документ'
         verbose_name_plural = 'Документы'
 
+    def __str__(self):
+        return self.name
 
 class TypeDocs(models.Model):
     id = models.AutoField(db_column='Id', primary_key=True)  # Field name made lowercase.
@@ -29,3 +31,6 @@ class TypeDocs(models.Model):
         db_table = 'type_docs'
         verbose_name = 'Тип документа'
         verbose_name_plural = 'Тип документов'
+
+    def __str__(self):
+        return self.description
