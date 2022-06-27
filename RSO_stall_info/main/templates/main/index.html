@@ -3,6 +3,23 @@
 {% block title %} Главная {% endblock %}
 
 {% block content %}
+      <div class="border-bottom d-flex pb-3 mb-3">
+            <div class="me-3 flex-grow-1">
+                    <button class="btn dropdown-toggle border-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Таблицы
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Таблица</a></li>
+                      <li><a class="dropdown-item" href="#">Таблица другая</a></li>
+                    </ul>
+            </div>
+            <div class="d-flex">
+                  <form class="d-flex " role="search">
+                        <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Найти</button>
+                  </form>
+            </div>
+      </div>
       {% for el in docs %}
             <p>{{ el.name }}</p>
       {% endfor %}
