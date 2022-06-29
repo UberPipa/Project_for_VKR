@@ -23,6 +23,14 @@
       {% for el in docs %}
             <p>{{ el.name }}</p>
       {% endfor %}
+
+{% if request.user.is_authenticated %}
+        <p>User is logged in :)</p>
+        <p>Username -->  {{ request.user.username }}</p>
+    {% else %}
+        <p>User is not logged in :(</p>
+    {% endif %}
+
 {% endblock %}
 
 

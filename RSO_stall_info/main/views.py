@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Docs, TypeDocs
+from django.contrib.auth import login, logout
 
 def index(request):
     docs = Docs.objects.all()
@@ -11,4 +12,16 @@ def about(request):
 
 
 def authentication(request):
+    # if request.method == 'POST':
+    #     form = UserLoginForm(data=request.POST)
+    #     if form.is_valid():
+    #         user = form.get_user()
+    #         login(request, user)
+    #         return redirect('main/index.html')
+    # else:
+    #     form = UserLoginForm()
+    # return render(request, 'main/authentication.html', {'form': form})
     return render(request, 'main/authentication.html')
+
+def admin(request):
+    return render(request, '/admin.html')
