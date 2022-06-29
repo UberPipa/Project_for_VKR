@@ -10,5 +10,5 @@ def about(request):
     return render(request, 'main/about.html')
 
 
-def about(request):
+def authentication(request):
     return render(request, 'main/authentication.html')
