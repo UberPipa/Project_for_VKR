@@ -2,9 +2,10 @@ from django.shortcuts import render
 from .models import Docs, TypeDocs
 from django.contrib.auth import login, logout
 
+
 def index(request):
     docs = Docs.objects.all()
-    return render(request, 'main/index.html', {'docs' : docs})
+    return render(request, 'main/index.html', {'docs': docs})
 
 
 def about(request):
@@ -22,6 +23,7 @@ def authentication(request):
     #     form = UserLoginForm()
     # return render(request, 'main/authentication.html', {'form': form})
     return render(request, 'main/authentication.html')
+
 
 def admin(request):
     return render(request, '/admin.html')
