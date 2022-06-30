@@ -2,18 +2,23 @@ from django.shortcuts import render, redirect
 from .models import Docs, TypeDocs
 from django.contrib.auth import login, logout, authenticate
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 
+@login_required(login_url='authentication')
 def index(request):
     docs = Docs.objects.all()
     return render(request, 'main/index.html', {'docs': docs})
 
 
+@login_required(login_url='authentication')
 def about(request):
     return render(request, 'main/about.html')
 
 
 def authentication(request):
+    if request.user.is_authenticated:
+        return redirect('index')
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -33,4 +38,4 @@ def logoutUser(request):
 
 
 def admin(request):
-    return render(request, '/admin.html')
+    return render(request, 'admin')
