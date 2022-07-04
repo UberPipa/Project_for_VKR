@@ -6,8 +6,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Авторизация</title>
     <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css'%}">
+    <link rel="icon" href="{% static 'main/img/logo.png'%}">
 </head>
 <body style="background-color: #134361;">
 
@@ -40,14 +41,16 @@
                 <div class="form-group text-center text-danger">{{message}}</div>
               {% endfor %}
           <div class="py-3">
-            <img class="img-fluid mx-auto d-block" src="{% static 'main/img/full logo.png'%}" alt="Horizon_text_and_logo" style="height: 250px">
+            <a href="http://www.spectest.ru/">
+              <img  class="img-fluid mx-auto d-block" src="{% static 'main/img/full logo.png'%}" alt="Horizon_text_and_logo" style="height: 250px">
+            </a>
           </div>
         </form>
       </div>
     </div>
   </div>
   </div>
-    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark" style="background-color: #134361;">
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark" style="background-color: #11374f;">
     <div class="container-fluid col-sm-10">
       <div class="mx-auto">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
