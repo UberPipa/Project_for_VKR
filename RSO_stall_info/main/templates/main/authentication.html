@@ -10,34 +10,42 @@
     <link rel="stylesheet" href="{% static 'main/css/bootstrap.min.css'%}">
 </head>
 <body style="background-color: #134361;">
-<div class="modal modal-signin position-static d-block  py-5" tabindex="-1" role="dialog" id="modalSignin">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content rounded-5 shadow-lg">
-      <div class="modal-header p-5 pb-4 border-bottom-0 mx-auto">
-        <h2 class="fw-bold mb-0 ">Авторизуйтесь</h2>
+
+  <div class="" style="position: absolute; top: 45%; left: 50%; transform: translate(-50%,-50%);">
+    <div class="" style="">
+    <div class="modal-content rounded-5 shadow-lg" style="width: 400px; margin: 0 auto; background-color: #ffffff;">
+      <div class="modal-header pt-5 pb-2 border-bottom-0 mx-auto">
+        <legend class="mb-2 ">Авторизуйтесь</legend>
       </div>
-      <div class="modal-body p-5 pt-0">
-        <form method="post" novalidate>
+      <div class="modal-body p-4 pt-0">
+        <form method="post" class="needs-validation" novalidate>
           {% csrf_token %}
           <div class="form-floating mb-3">
-            <input type="text" name="username" class="form-control rounded-4" id="floatingInput" placeholder="UserName" required>
+            <input type="text" name="username" class="form-control rounded-4" id="floatingInput" placeholder="Логин" required>
             <label for="floatingInput">Логин</label>
+            <div class="invalid-feedback">
+              <p class="text-center">Необходимо ввести логин</p>
+            </div>
           </div>
           <div class="form-floating mb-3">
-            <input type="password" name="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password" required>
+            <input type="password" name="password" class="form-control rounded-4" id="floatingPassword" placeholder="Пароль" required>
             <label for="floatingPassword">Пароль</label>
+            <div class="invalid-feedback">
+              <p class="text-center">Необходимо ввести пароль</p>
+            </div>
           </div>
-          <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Вход</button>
+          <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary mt-3" type="submit">Вход</button>
           <hr class="my-4">
               {% for message in messages %}
                 <div class="form-group text-center text-danger">{{message}}</div>
               {% endfor %}
-          <div class="py-4">
-            <img class="mt-4 img-fluid mx-auto d-block" src="{% static 'main/img/full logo.png'%}" alt="Horizon_text_and_logo" style="height: 250px">
+          <div class="py-3">
+            <img class="img-fluid mx-auto d-block" src="{% static 'main/img/full logo.png'%}" alt="Horizon_text_and_logo" style="height: 250px">
           </div>
         </form>
       </div>
     </div>
+  </div>
   </div>
     <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark" style="background-color: #134361;">
     <div class="container-fluid col-sm-10">
@@ -50,7 +58,28 @@
       </div>
     </div>
   </nav>
-</div>
+
 <script src="{% static 'main/js/bootstrap.bundle.js'%}"></script>
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
 </body>
 </html>
