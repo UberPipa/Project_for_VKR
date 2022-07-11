@@ -1,0 +1,49 @@
+{% extends 'main/doc_base.html' %}
+
+{% block title %} База данных {% endblock %}
+
+{% block ee %}
+
+      <div class="border-bottom pb-3 mb-3 row">
+            <div class="d-flex col-auto col-2">
+                <select class="form-select form-select-sm">
+                    <option selected>Выберите таблицу</option>
+                    <option value="1">Один</option>
+                    <option value="2">Два</option>
+                    <option value="3">Три</option>
+                </select>
+            </div>
+            <div class="d-flex col-auto col-7">
+
+            </div>
+            <div class="col-auto col-3">
+                <form class="d-flex" role="search">
+                    <input class="form-control form-control-sm me-2" type="search" placeholder="Поиск">
+                    <button class="btn btn-sm btn-outline-success" type="submit">Поиск</button>
+                </form>
+            </div>
+      </div>
+
+<!--Шапка таблицы-->
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Имя</th>
+              <th scope="col">Описание</th>
+              <th scope="col">Тип</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+              {% for el in docs %}
+                    <tr>
+                        <th scope="row">{{ forloop.counter }}</th>
+                        <td>{{ el.name }}</td>
+                        <td>{{ el.description }}</td>
+                        <td>{{ el.doc_type }}</td>
+                    </tr>
+              {% endfor %}
+          </tbody>
+        </table>
+
+{% endblock %}
