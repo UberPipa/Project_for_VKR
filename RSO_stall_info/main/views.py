@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Docs
+from .models import Docs, TypeDocs
 from django.contrib.auth import login, logout, authenticate
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -12,8 +12,19 @@ def index(request):
 
 @login_required(login_url='authentication')
 def doc_base(request):
+    return render(request, 'main/doc_base.html')
+
+
+@login_required(login_url='authentication')
+def table_1(request):
     docs = Docs.objects.all()
-    return render(request, 'main/doc_base.html', {'docs': docs})
+    return render(request, 'main/table_1.html', {'docs': docs})
+
+
+@login_required(login_url='authentication')
+def table_2(request):
+    type_docs = TypeDocs.objects.all()
+    return render(request, 'main/table_2.html', {'type_docs': type_docs})
 
 
 def authentication(request):

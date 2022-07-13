@@ -8,5 +8,7 @@ urlpatterns = [
     path('authentication', views.authentication, name='authentication'),
     path('logout', views.logoutUser, name='logout'),
     path('admin', admin.site.urls, name='admin'),
-    #path('table_1', views.table_1, name='table_1'),
+    path('table_1', views.table_1, name='table_1'),
+    path('table_2', views.table_2, name='table_2'),
+
 ]
