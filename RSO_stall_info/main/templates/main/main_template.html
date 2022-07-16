@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{% static 'main/css/buttons.bootstrap5.min.css'%}">
   <!-- Стили из Датабазы-->
 </head>
-<body>
+<body style="background-color: #fafafa;">
   <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #134361;">
     <div class="container-fluid col-sm-10">
       <a class="navbar-brand" href="{% url 'index' %}">Главная</a>
@@ -84,7 +84,7 @@
 
 
   <main class="container" >
-    <div class="my-2 p-4 rounded shadow " style="background-color: #F6F3F3;">
+    <div class="my-2 p-4 rounded shadow " style="background-color: #FFFFFF;">
       {% block content %}{% endblock %}
     </div>
   </main>
@@ -115,16 +115,16 @@
 <!--Для таблиц-->
   <script src="{% static 'main/js/table.js'%}"></script>
   <script src="{% static 'main/js/jquery-3.5.1.js'%}"></script>
-  <script src="{% static 'main/js/jquery.dataTables.min.js'%}"></script>
-  <script src="{% static 'main/js/dataTables.bootstrap5.min.js'%}"></script>
+  <script src="{% static 'main/js/jquery.dataTables.js'%}"></script>
+  <script src="{% static 'main/js/dataTables.bootstrap5.js'%}"></script>
   <script src="{% static 'main/js/dataTables.buttons.min.js'%}"></script>
-  <script src="{% static 'main/js/buttons.bootstrap5.min.js'%}"></script>
+  <script src="{% static 'main/js/buttons.bootstrap5.js'%}"></script>
   <script src="{% static 'main/js/jszip.min.js'%}"></script>
   <script src="{% static 'main/js/pdfmake.min.js'%}"></script>
   <script src="{% static 'main/js/vfs_fonts.js'%}"></script>
-  <script src="{% static 'main/js/buttons.html5.min.js'%}"></script>
+  <script src="{% static 'main/js/buttons.html5.js'%}"></script>
   <script src="{% static 'main/js/buttons.print.min.js'%}"></script>
-  <script src="{% static 'main/js/buttons.colVis.min.js'%}"></script>
+  <script src="{% static 'main/js/buttons.colVis.js'%}"></script>
 <!--Для таблиц-->
 
 
