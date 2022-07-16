@@ -1,7 +1,10 @@
 $(document).ready(function() {
     var table = $('#example').DataTable( {
         lengthChange: false,
-        buttons: [ 'copy', 'excel', 'pdf', 'colvis' ]
+        buttons: [ 'copy',  'print', 'excel', 'pdf', 'colvis' ],
+        select: true,
+        autoFill: true
+
     } );
 
     table.buttons().container()

@@ -11593,7 +11593,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sNext": "Next",
+				"sNext": "Вперёд",
 
 
 				/**
@@ -11616,7 +11616,7 @@
 				 *      } );
 				 *    } );
 				 */
-				"sPrevious": "Previous"
+				"sPrevious": "Назад"
 			},
 
 			/**
@@ -11911,7 +11911,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sSearch": "Поиск:",
+			"sSearch": "",
 
 
 			/**
@@ -11922,7 +11922,7 @@
 			 *  @dtopt Language
 			 *  @name DataTable.defaults.language.searchPlaceholder
 			 */
-			"sSearchPlaceholder": "",
+			"sSearchPlaceholder": "Поиск",
 
 
 			/**
