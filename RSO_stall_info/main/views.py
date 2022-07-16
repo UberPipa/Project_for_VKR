@@ -3,6 +3,7 @@ from .models import Docs, TypeDocs
 from django.contrib.auth import login, logout, authenticate
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.db.models import Q
 
 
 @login_required(login_url='authentication')

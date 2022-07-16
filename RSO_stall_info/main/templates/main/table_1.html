@@ -20,15 +20,15 @@
 
             </div>
             <div class="col-auto col-3">
-                <form class="d-flex" role="search">
+                <form class="d-flex" role="search" action="{% url 'table_1' %}" method="get">
                     <input class="form-control form-control-sm me-2" type="search" placeholder="Поиск">
-                    <button class="btn btn-sm btn-outline-success" type="submit">Поиск</button>
+                    <button class="btn btn-sm btn-outline-success" type="search">Поиск</button>
                 </form>
             </div>
       </div>
 
 <!--Шапка таблицы-->
-        <table class="table table-hover">
+        <table class="table table-hover" id="table1">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -48,15 +48,5 @@
               {% endfor %}
           </tbody>
         </table>
-
-    <nav>
-      <ul class="pagination pagination-sm">
-        <li class="page-item"><a class="page-link" href="#">Предыдущая</a></li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item"><a class="page-link" href="#">Следующая</a></li>
-      </ul>
-    </nav>
 
 {% endblock %}
