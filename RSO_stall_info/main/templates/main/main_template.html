@@ -14,11 +14,12 @@
     <link rel="stylesheet" href="{% static 'main/css/dataTables.bootstrap5.min.css'%}">
     <link rel="stylesheet" href="{% static 'main/css/buttons.bootstrap5.min.css'%}">
     <link rel="stylesheet" href="{% static 'main/css/select.bootstrap5.min.css'%}">
-
+    <link rel="stylesheet" href="{% static 'main/css/colReorder.bootstrap5.css'%}">
+    <link rel="stylesheet" href="{% static 'main/css/fixedHeader.bootstrap5.css'%}">
   <!-- Стили из Датабазы-->
 </head>
 <body style="background-color: #fafafa;">
-  <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #134361;">
+  <nav class="navbar navbar-expand-md navbar-dark " style="background-color: #134361;">
     <div class="container-fluid col-sm-10">
       <a class="navbar-brand" href="{% url 'index' %}">Главная</a>
       <div class="collapse navbar-collapse">
@@ -128,6 +129,8 @@
   <script src="{% static 'main/js/buttons.print.js'%}"></script>
   <script src="{% static 'main/js/buttons.colVis.js'%}"></script>
   <script src="{% static 'main/js/dataTables.select.js'%}"></script>
+  <script src="{% static 'main/js/dataTables.colReorder.js'%}"></script>
+  <script src="{% static 'main/js/dataTables.fixedHeader.js'%}"></script>
 <!--Для таблиц-->
 
 

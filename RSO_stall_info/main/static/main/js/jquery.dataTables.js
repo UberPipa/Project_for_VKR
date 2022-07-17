@@ -11832,7 +11832,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sLengthMenu": "Show _MENU_ entries",
+			"sLengthMenu": "Показано _MENU_ строк",
 
 
 			/**
