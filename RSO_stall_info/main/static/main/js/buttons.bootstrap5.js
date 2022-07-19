@@ -62,7 +62,7 @@ $.extend( true, DataTable.Buttons.defaults, {
 		splitDropdown: {
 			tag: 'button',
 			text: '',
-			className: 'btn btn-secondary dt-btn-split-drop dropdown-toggle dropdown-toggle-split',
+			className: 'btn btn-sm btn-primary dt-btn-split-drop dropdown-toggle dropdown-toggle-split',
 			closeButton: false,
 			align: 'split-left',
 			splitAlignClass: 'dt-button-split-left'
