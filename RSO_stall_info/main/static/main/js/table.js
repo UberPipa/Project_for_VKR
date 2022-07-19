@@ -4,15 +4,7 @@ $(document).ready(function() {
         lengthChange: false,
         buttons: [
             'pageLength',
-            {
-                extend: 'spacer',
-                style: 'bar',
-            },
             'colvis',
-            {
-                extend: 'spacer',
-                style: 'bar',
-            },
             {
                 extend: 'copy',
                 split: [ 'pdf', 'excel', 'print'],

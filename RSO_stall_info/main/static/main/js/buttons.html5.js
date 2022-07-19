@@ -1004,7 +1004,7 @@ DataTable.ext.buttons.excelHtml5 = {
 	},
 
 	text: function ( dt ) {
-		return dt.i18n( 'buttons.excel', 'Excel' );
+		return dt.i18n( 'buttons.excel', 'Экспорт в Excel' );
 	},
 
 	action: function ( e, dt, button, config ) {
@@ -1311,7 +1311,7 @@ DataTable.ext.buttons.pdfHtml5 = {
 	},
 
 	text: function ( dt ) {
-		return dt.i18n( 'buttons.pdf', 'PDF' );
+		return dt.i18n( 'buttons.pdf', 'Экспорт в PDF' );
 	},
 
 	action: function ( e, dt, button, config ) {
