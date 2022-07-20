@@ -4,25 +4,23 @@
 
 {% block content %}
 
-      <div class="pb-2 mb-2 row">
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Включить прокрутку и фон</button>
-                <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <button class="btn btn-sm btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions">Выберите таблицу</button>
+                <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions">
                   <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Фон с прокруткой</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                   </div>
                   <div class="offcanvas-body">
                     <div class="dropdown">
-                      <a class="btn btn-sm btn-outline-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="btn btn-sm btn-outline-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown">
                         Таблица 2
                       </a>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="{% url 'table_1' %}">Таблица 1</a></li>
                         <li><a class="dropdown-item" href="{% url 'table_2' %}">Таблица 2</a></li>
                       </ul>
                     </div>
                   </div>
                 </div>
-      </div>
 
 {% endblock %}
