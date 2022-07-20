@@ -9,11 +9,6 @@ $(document).ready(function() {
                 extend: 'copy',
                 split: [ 'pdf', 'excel', 'print'],
             },
-//            {
-//            extend: 'spacer',
-//            style: 'bar'
-//            },
-
         ],
         select: true,
         autoFill: true,
