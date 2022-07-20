@@ -11639,7 +11639,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sEmptyTable": "No data available in table",
+			"sEmptyTable": "Данные в таблице отсутствуют",
 
 
 			/**
@@ -11856,7 +11856,7 @@
 			 *      } );
 			 *    } );
 			 */
-			"sLoadingRecords": "Loading...",
+			"sLoadingRecords": "Загрузка...",
 
 
 			/**
